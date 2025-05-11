@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.2.14">
-  <diagram name="Punto1:Patron Visitor" id="-QUyp3NRW04CJntgeqOS">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.2.14" pages="3">
+  <diagram name="Patrón 1:Patrón Visitor" id="-QUyp3NRW04CJntgeqOS">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="xHhiAaH-M5aRm_jPoFrB-0" />
@@ -251,6 +251,163 @@
               <mxPoint x="-860" y="783" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cueZ2dSW30OmmPc3Ty-S" name="Patrón 2: Observer">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-1" value="&lt;&lt;Interface&gt;&gt;&#xa;subject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="289" y="20" width="250" height="130" as="geometry">
+            <mxRectangle x="-430" y="190" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-2" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-1">
+          <mxGeometry y="40" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-3" value="+attach(observer:Observer)::void&#xa;+detach(observer:Observer)::void&#xa;+notify(message:str,data: Dict[str,Any]):void&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-1">
+          <mxGeometry y="60" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="i43G9BMPGqv3hc4V1BFE-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;strokeWidth=2;endArrow=block;endFill=0;endSize=4;startSize=4;" edge="1" parent="1" source="GzrTRWD2BwZOs7wbeYQE-4" target="GzrTRWD2BwZOs7wbeYQE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-4" value="NotificationSystem" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="289" y="210" width="250" height="130" as="geometry">
+            <mxRectangle x="-430" y="190" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-5" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-4">
+          <mxGeometry y="40" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-6" value="+attach(observer:Observer)::void&#xa;+detach(observer:Observer)::void&#xa;+notify(message:str,data: Dict[str,Any]):void&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-4">
+          <mxGeometry y="60" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=0;strokeWidth=2;" edge="1" parent="1" source="GzrTRWD2BwZOs7wbeYQE-7" target="GzrTRWD2BwZOs7wbeYQE-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-7" value="&lt;&lt;Interface&gt;&gt;&#xa;Observer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="377" width="320" height="192" as="geometry">
+            <mxRectangle x="-430" y="190" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-9" value="-_name:str&#xa;-_observers: List [Observer]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-7">
+          <mxGeometry y="40" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-8" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-7">
+          <mxGeometry y="80" width="320" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-46" value="&#xa;+__init__(name:str)&#xa;+attach(observer:observer)::void&#xa;+dettach(observer:observer)::void&#xa;+notify(message:str, data: Dict[str, Any])::void&#xa;+create_notification(message:str,data:Dict[str, any])::void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-7">
+          <mxGeometry y="90" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="i43G9BMPGqv3hc4V1BFE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="GzrTRWD2BwZOs7wbeYQE-11" target="GzrTRWD2BwZOs7wbeYQE-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-11" value="SMSNotifier" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="279" y="668" width="270" height="180" as="geometry">
+            <mxRectangle x="-430" y="190" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-18" value="-phone:str&#xa;&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-11">
+          <mxGeometry y="40" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-12" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-11">
+          <mxGeometry y="70" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-13" value="+__init__(phone:str)&#xa;&#xa;+update(message: str, data:dict[str,Any])::void&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-11">
+          <mxGeometry y="90" width="270" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="i43G9BMPGqv3hc4V1BFE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=0;dashed=1;" edge="1" parent="1" source="GzrTRWD2BwZOs7wbeYQE-19" target="GzrTRWD2BwZOs7wbeYQE-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-19" value="EmailNotificar" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="9" y="668" width="260" height="180" as="geometry">
+            <mxRectangle x="-430" y="190" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-20" value="-email:str&#xa;&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-19">
+          <mxGeometry y="40" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-21" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-19">
+          <mxGeometry y="70" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-22" value="+__init__(email:str)&#xa;&#xa;+update(message: str, data:dict[str,Any])::void&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-19">
+          <mxGeometry y="90" width="260" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="i43G9BMPGqv3hc4V1BFE-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=0;dashed=1;" edge="1" parent="1" source="GzrTRWD2BwZOs7wbeYQE-23" target="GzrTRWD2BwZOs7wbeYQE-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-23" value="PushNotifie" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="668" width="260" height="180" as="geometry">
+            <mxRectangle x="-430" y="190" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-24" value="-device_id:str&#xa;&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-23">
+          <mxGeometry y="40" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-25" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-23">
+          <mxGeometry y="70" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GzrTRWD2BwZOs7wbeYQE-26" value="+__init__(device:str)&#xa;&#xa;+update(message: str, data:dict[str,Any])::void&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="GzrTRWD2BwZOs7wbeYQE-23">
+          <mxGeometry y="90" width="260" height="52" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pSAHo-7mpTnLE6pzb7T9" name="Patrón 2: Patrón template">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ym7HDIRdtknmRLhNgPem-1" value="TravelTimeCalculator&#xa;" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="10" width="160" height="190" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-2" value="# speed: Double&#xa;# distance: Double&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ym7HDIRdtknmRLhNgPem-1">
+          <mxGeometry y="50" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ym7HDIRdtknmRLhNgPem-1">
+          <mxGeometry y="90" width="160" height="9.736842105263158" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-4" value="+ timeCalculator():&#xa;&#xa;+ validateIn(): Boolean&#xa;&#xa;+ calculateTime():&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="ym7HDIRdtknmRLhNgPem-1">
+          <mxGeometry y="99.73684210526315" width="160" height="90.26" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeWidth=2;" edge="1" parent="1" source="ym7HDIRdtknmRLhNgPem-5" target="ym7HDIRdtknmRLhNgPem-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-5" value="MotorcycleCalculator&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="280" width="155" height="110" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-6" value="&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ym7HDIRdtknmRLhNgPem-5">
+          <mxGeometry y="50" width="155" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-7" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ym7HDIRdtknmRLhNgPem-5">
+          <mxGeometry y="60" width="155" height="9.736842105263158" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-8" value="+ calculateTime()&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="ym7HDIRdtknmRLhNgPem-5">
+          <mxGeometry y="69.73684210526315" width="155" height="20.26" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=0;" edge="1" parent="1" source="ym7HDIRdtknmRLhNgPem-9" target="ym7HDIRdtknmRLhNgPem-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-9" value="BusCalculator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="280" width="155" height="110" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-10" value="&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ym7HDIRdtknmRLhNgPem-9">
+          <mxGeometry y="50" width="155" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-11" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ym7HDIRdtknmRLhNgPem-9">
+          <mxGeometry y="60" width="155" height="9.736842105263158" as="geometry" />
+        </mxCell>
+        <mxCell id="ym7HDIRdtknmRLhNgPem-12" value="+ calculateTime()&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="ym7HDIRdtknmRLhNgPem-9">
+          <mxGeometry y="69.73684210526315" width="155" height="20.26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
