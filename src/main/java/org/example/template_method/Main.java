@@ -7,6 +7,6 @@ public class Main {
         calculator.timeCalculator(50.0, 23.0);
         System.err.println("============================");
         calculator = new BusCalculator();
-        calculator.timeCalculator(40.0, 60.0);
+        calculator.timeCalculator(50.0, 23.0);
     }
 }
